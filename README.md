@@ -27,6 +27,8 @@ This endpoint used for getting all user list. This API can only be accessed by A
 ```sh
 [GET] /users
 ```
+##### Auth
+User auth for this endpoint is bearer token using token got from the login API
 ##### Response Success
 ```sh
 {
@@ -73,6 +75,8 @@ This endpoint used to get all transactions saved in the database.
 ```sh
 [GET] /transaction
 ```
+##### Auth
+User auth for this endpoint is bearer token using token got from the login API
 ##### Filters
 This API provided 3 filters in the query param :
 - page
@@ -119,6 +123,8 @@ This endpoint used to create new transaction and save it to the database.
 ```sh
 [POST] /transaction
 ```
+##### Auth
+User auth for this endpoint is bearer token using token got from the login API
 ##### Request body
 ```sh
 {
@@ -147,6 +153,8 @@ This endpoint used to update existing transaction and save it to the database.
 ```sh
 [PUT] /transaction/:id
 ```
+##### Auth
+User auth for this endpoint is bearer token using token got from the login API
 ##### Request body
 ```sh
 {
@@ -175,6 +183,8 @@ This endpoint used to delete transaction and save it to the database.
 ```sh
 [DELETE] /transaction/:id
 ```
+##### Auth
+User auth for this endpoint is bearer token using token got from the login API
 ##### Response success
 ```sh
 "transaction has deleted successfully"
