@@ -1,0 +1,21 @@
+{
+    "app_name": "Credibook Test",
+    "app_env": "dev",
+    "database": {
+        "mysql": {
+            "driver": "mysql",
+            "host": "127.0.0.1",
+            "user": "root",
+            "password": "",
+            "db_name": "credibook",
+            "port": 3306,
+            "debug": false,
+            "pool": {
+                "maxOpenConns": 100,
+                "maxIdleConns": 10,
+                "maxLifetime": 300
+            }
+        }
+    }
+  }
+  
